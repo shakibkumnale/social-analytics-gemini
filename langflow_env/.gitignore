@@ -1,0 +1,24 @@
+# Ignore all files in langflow_env
+langflow_env/*
+
+# But keep your project files
+!langflow_env/your_project_folder/
+!langflow_env/*.py
+!langflow_env/requirements.txt
+
+# Ignore compiled files
+*.pyc
+__pycache__/
+
+# Ignore environment variables
+.env
+
+# Cache and temporary files
+*.log
+*.lock
+local_cache/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
