@@ -1,6 +1,4 @@
-Here’s the complete merged description for your GitHub repository:
 
----
 
 # **Social Media Performance Analysis**
 
@@ -34,7 +32,10 @@ Due to unavailability of an OpenAI API key, the Gemini AI API was used as an alt
 
 Follow these steps to set up and run the project locally:
 
+Got it! Here's the updated version of the instructions based on the new method to run the project:
+
 ---
+
 
 #### **1. Clone the Repository**
 ```bash
@@ -46,35 +47,35 @@ cd social-media-performance
 
 #### **2. Install Dependencies**
 - Ensure you have **Python 3.8+** installed on your system.
-- Create and activate a virtual environment:
+- Install **Langflow** using pip:
   ```bash
-  python -m venv venv
-  source venv/bin/activate  # On Windows: venv\Scripts\activate
-  ```
-- Install the required packages:
-  ```bash
-  pip install -r requirements.txt
+  pip install langflow
   ```
 
 ---
 
-#### **3. Configure Environment Variables**
-- Create a `.env` file in the root directory:
+#### **3. Create and Activate Virtual Environment**
+- Create a virtual environment named `langflow_env`:
   ```bash
-  touch .env
+  python -m venv langflow_env
   ```
-- Add the following variables to the `.env` file:
+- Activate the virtual environment:
+  ```bash
+  langflow_env\Scripts\activate  # On Windows
   ```
-  GEMINI_API_KEY=your_gemini_api_key
-  ASTRA_DB_CLIENT_ID=your_astra_client_id
-  ASTRA_DB_CLIENT_SECRET=your_astra_client_secret
-  ASTRA_DB_KEYSPACE=your_keyspace_name
-  ASTRA_DB_HOST=your_database_host
+  Or on macOS/Linux:
+  ```bash
+  source langflow_env/bin/activate
   ```
 
 ---
 
-#### **4. Set Up Astra DB**
+#### **4. Configure Environment Variables**
+
+
+---
+
+#### **5. Set Up Astra DB**
 - Use the [DataStax Astra DB dashboard](https://www.datastax.com/) to:
   - Create a database.
   - Add a table for storing engagement data (`social_engagement`).
@@ -85,16 +86,16 @@ cd social-media-performance
 
 ---
 
-#### **5. Run the Project**
-- Launch the project:
+#### **6. Run the Project**
+- Run the project using Langflow:
   ```bash
-  python main.py
+  uv run langflow run
   ```
 - Open the application in your browser (if applicable) or view console outputs.
 
 ---
 
-#### **6. Testing**
+#### **7. Testing**
 To test functionality:
 - Update the `tests/` folder with your API keys and sample data.
 - Run the tests:
@@ -104,4 +105,4 @@ To test functionality:
 
 ---
 
-Feel free to adjust the details as needed. Let me know if you need further customization!
+This should be aligned with your new setup. Let me know if any further changes are needed!
